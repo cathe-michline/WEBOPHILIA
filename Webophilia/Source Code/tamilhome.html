@@ -1,0 +1,359 @@
+<!--this is the homepage code-->
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>	
+	<title>முகப்பு பக்கம்</title>
+<style>
+
+	<link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	
+	body{
+		font-family: 'Mukta Malar', sans-serif;
+		width: 100%;
+		overflow: auto;
+	}
+	#p1{
+		color: #3498db;
+		letter-spacing: 5px;
+	}
+	h2{
+		color:#2c3e50;
+	}
+
+	#p1{
+		color: #3498db;
+		letter-spacing: 5px;
+	}
+	#p3{
+		border-bottom: 2px solid #f1f1f1;
+		padding-bottom: 15px;
+	}
+	.fixed {
+		width: 100%;
+		height: 150px;
+		display: block;
+		background-color: white;
+		text-align: center;
+		padding: 30px;
+		
+		
+	}
+
+	.stats{
+	padding-left : 400px;
+	padding-right : 400px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	}
+
+	div.Prevention {
+	  position: absolute;
+	  float: right;
+	  right: 0px;
+	  width: 85%;
+	  height:100%;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  overflow: auto;  
+	  padding: 10px 10px;
+	  border-left: 2px gray;
+	  border-bottom: 2px gray;
+	}
+	.tweets {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap:4px;
+		overflow: auto;
+	}
+	.container {
+	  position: relative;
+	  width: 75%;
+	  max-width: 50px;
+	float:left;
+	 
+	}
+
+	.container img {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 8px;
+	  
+	}
+
+	.container .btn {
+	  position: absolute;
+	  top: 55%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  background-color: #555;
+	  color: white;
+	  font-size: 16px;
+	  padding: 12px 24px;
+	  border: none;
+	  cursor: pointer;
+	  border-radius: 5px;
+	  text-align: center;
+	}
+	#font-italic {
+		color:solid black;
+		float:left;
+		font-size:20px;
+		font-weight: 500px;
+
+	}
+
+	.container .btn:hover {
+	  background-color: black;
+	}
+	nav {
+	  text-align: center;
+	  position: fixed !important;
+	  top: 0;
+	  lef: 0;
+	  right: 0;
+	  height: 50px;
+	  padding-top: 15px;
+	  box-shadow: 0px 0px 8px 0px;
+	  -webkit-box-shadow: 0px 0px 8px 0px;
+	  -moz-box-shadow: 0px 0px 8px 0px;
+	  background-color: gray;
+	  width: 100%;
+	  z-index: 100;
+	}
+	.maincounter-number {
+		font-size: 40px;
+	}
+	.count-table {
+	text-align:center;
+		
+		height :50px;
+		
+	}
+	.fixed {
+		text-align: center;
+		height: 200px;
+		background-color: WhiteSmoke;
+		padding-top:80px;	}
+	
+	 h1.header{
+		font-family: Verdana;
+        color: #413c42;
+		font-weight:200;
+        font-size: 50px;
+		  text-shadow: 2px 2px 4px LightGrey;
+    }
+    @media (max-width:767px){
+		.checkup{
+			background:#1a1b1c;
+		}
+	}
+	
+</style>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<!---Navgation bar-->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#header">முகப்புப்பக்கம்</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#maduraitoday">மதுரை இன்று</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="#checkup">பரிசோதனை</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">கொரோனா பற்றி</a>
+            </li>            
+			<li class="nav-item">
+                <a class="nav-link" href="#ayurvedicconsults">ஆயுர்வேத ஆலோசனைகள்</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#footer">அரசாங்க  இணைப்புகள்</a>
+            </li>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          தரவரிசை
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <p class="dropdown-item">1. சென்னை -&nbsp;&nbsp;<span style="color:black">9364</span>&nbsp;&nbsp;&nbsp;<span style="color:red">67</span>&nbsp;&nbsp;&nbsp;<span style="color:green">3773</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">2. செங்கல்பட்டு -&nbsp;&nbsp;<span style="color:black">695</span>&nbsp;&nbsp;&nbsp;<span style="color:red">6</span>&nbsp;&nbsp;&nbsp;<span style="color:green">233</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">3. கடலூர் -&nbsp;&nbsp;<span style="color:black">421</span>&nbsp;&nbsp;&nbsp;<span style="color:red">1</span>&nbsp;&nbsp;&nbsp;<span style="color:green">405</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">4. காஞ்சீபுரம் -&nbsp;&nbsp;<span style="color:black">249</span>&nbsp;&nbsp;&nbsp;<span style="color:red">1</span>&nbsp;&nbsp;&nbsp;<span style="color:green">150</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item" style="color:black;font-weight:700;">5. மதுரை -&nbsp;&nbsp;<span style="color:black">224</span>&nbsp;&nbsp;&nbsp;<span style="color:red">2</span>&nbsp;&nbsp;&nbsp;<span style="color:green">115</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">6. கோவை -&nbsp;&nbsp;<span style="color:black">146</span>&nbsp;&nbsp;&nbsp;<span style="color:red">1</span>&nbsp;&nbsp;&nbsp;<span style="color:green">144</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">7. பெரம்பலூர் -&nbsp;&nbsp;<span style="color:black">139</span>&nbsp;&nbsp;&nbsp;<span style="color:red">0</span>&nbsp;&nbsp;&nbsp;<span style="color:green">133</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">8. திண்டுக்கல் -&nbsp;&nbsp;<span style="color:black">133</span>&nbsp;&nbsp;&nbsp;<span style="color:red">1</span>&nbsp;&nbsp;&nbsp;<span style="color:green">106</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">9. கல்லக்குரிச்சி -&nbsp;&nbsp;<span style="color:black">121</span>&nbsp;&nbsp;&nbsp;<span style="color:red">0</span>&nbsp;&nbsp;&nbsp;<span style="color:green">6</span></p>
+		  <div class="dropdown-divider"></div>
+		  <p class="dropdown-item">10. கரூர்-&nbsp;&nbsp;<span style="color:black">80</span>&nbsp;&nbsp;&nbsp;<span style="color:red">0</span>&nbsp;&nbsp;&nbsp;<span style="color:green">55</span></p>
+        </div></li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://covid-tracker-coceb.run-ap-south1.goorm.io">ஆங்கிலம்</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="https://covid-tracker-coceb.run-ap-south1.goorm.io/tamil">தமிழ்</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="fixed" id="header">							
+	<h1 class="header" >மதுரை கொரோனா புள்ளிவிவரங்கள்</h1>
+</section>
+</div>
+<div  id="maduraitoday">
+</div>
+<div class="count-table">
+<br>
+<div style="font-size:15px; color:#999; text-align:center">கடைசியாக புதுப்பிக்கப்பட்டது: May 23, 2020, 9:00 PM IST</div>
+<div style="width:100%">
+<h2>
+<div style="display:inline"> <img src="https://cdn.kastatic.org/ka-perseus-images/a8a19d777ab5fee4a3666927202d88dcba7bd42c.jpg" width="70" border="1 px solid #aaa"></div>&nbsp;மதுரை</h2>
+</div>
+<div id="maincounter-wrap" style="margin-top:15px">
+<h1>மொத்தம் பாதிக்கப்பட்டவர்கள்:</h1>
+<div class="maincounter-number">
+<span style="color:#aaa">224 </span>
+</div>
+</div>
+<div id="maincounter-wrap" style="margin-top:15px">
+<h1>உயிரிழப்புகள்:</h1>
+<div class="maincounter-number">
+<span style="color: #FF0000">2<p style="display:inline;font-size:30px;">(1.70%)</p></span></span>
+</div>
+</div>
+<div id="maincounter-wrap" style="margin-top:15px;">
+<h1>மீட்கப்பட்டவர்கள்:</h1>
+<div class="maincounter-number" style="color:#8ACA2B ">
+<span>115<p style="display:inline;font-size:30px;">(98.29%)</p></span></span>
+</div>
+<div>
+</div>
+<hr style="height:2px;border-width:0;width:100%;text-align:left;margin-left:0;color:gray;background-color:gray">
+<div class = row>
+<div class = "col-lg-6 col-sm-6 col-xsm-12" >
+<!--TWEETS-->
+<div class="tweets" id="tweets">
+	    <div class="WHO">
+        <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+	<div class="twitter">
+     <a class="twitter-timeline" data-lang="en" data-width="500" data-height="500" data-theme="light" href="https://twitter.com/Vijayabaskarofl?ref_src=twsrc%5Etfw">Tweets by Vijayabaskarofl</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+<hr style="height:2px;border-width:0;width:100%;text-align:left;margin-left:0;color:gray;background-color:gray">
+<!--TEST-->
+<br>
+<div class="container" id="checkup" >
+<div class="checkup">
+<h2 style="width: 100%;height:; text-align: center;font-family:Candara Light;color: gray;font-size: 30px;   border-bottom: 1px solid gray;margin: auto; ">
+<span style="background:white;">&nbsp;COVID-19 க்கான சோதனையை மேற்கொள்ளுங்கள்&nbsp;</span></h2><br></div>
+<img src="https://cdn.thewire.in/wp-content/uploads/2020/04/02202453/fusion-medical-animation-rnr8D3FNUNY-unsplash-1600x900.jpg" alt="virus" style="width:75%">
+<a href = "https://covid-tracker-coceb.run-ap-south1.goorm.io/checkuptamil"><button class="btn" onclick="window.location.href='https://covid-tracker-coceb.run-ap-south1.goorm.io/checkuptamil'">COVID-19 சோதனை</button></a>
+</div>
+</section>
+</div>
+
+<div class = "col-lg-6 col-sm-6 col-xsm-12">
+<!--PREVENTIVE MEASURES-->
+<div class="Prevention" id="preventivemeasures" style="text-align:left;">
+<div class="preventivemeasures">
+<h2 style="width: 100%;height:; text-align: center;font-family:Candara Light;color: gray;font-size: 30px;   border-bottom: 1px solid gray;margin: auto; ">
+<span style="background:white;">&nbsp;தடுப்பு நடவடிக்கைகள்&nbsp;</span></h2><br></div>
+<h2>உங்களைப் பாதுகாத்துக் கொள்வது எப்படி?</h2>
+<p id="p1"><i>பாதுகாப்பு நடவடிக்கைகள்</i> </p>
+<p id="p2"><b>• உங்கள் கைகளை ஆல்கஹால் அடிப்படையிலான கை தேய்த்தல் மூலம் தவறாமல் மற்றும் முழுமையாக சுத்தம் செய்யுங்கள் அல்லது சோப்பு மற்றும் தண்ணீரில் கழுவவும். <img src="https://media1.s-nbcnews.com/j/newscms/2019_51/3151621/191217-hand-washing-stock-cs-906a_f4b26951f71188739ce7617acf4cb093.fit-760w.jpg" width="70" border="1 px solid #aaa" display="inline"><br><br>
+• கண்கள், மூக்கு மற்றும் வாயைத் தொடுவதைத் தவிர்க்கவும். ஏனெனில் கைகள் பல மேற்பரப்புகளைத் தொடுகின்றன மற்றும் வைரஸ்களை எடுக்கலாம்.<img src="https://media.istockphoto.com/vectors/dont-touch-your-face-line-icons-on-white-background-vector-id1213719760" width="70" border="1 px solid #aaa" display="inline"><br><br>
+• நீங்களும் உங்களைச் சுற்றியுள்ளவர்களும் நல்ல சுவாச சுகாதாரத்தைப் பின்பற்றுவதை உறுதிப்படுத்திக் கொள்ளுங்கள்.<img src="https://www.carlroth.com/medias/NK35-1-01-ff-1000Wx1000H?context=bWFzdGVyfGltYWdlc3wxMTY4MzF8aW1hZ2UvanBlZ3xpbWFnZXMvaDRkL2hmMy84ODI3MzczNTE4ODc4LmpwZ3w1MjZlNGQ1MmMxODJkZTFlZGFmNDJhNzE1YmNkNjc0MmEzZGJlZTZlMGYxMjk2NWNjOThhMWUyZjQzMjVmZWEy" width="70" border="1 px solid #aaa" display="inline"><br><br>
+• உங்களுக்கு உடல்நிலை சரியில்லாமல் இருந்தால் வீட்டிலேயே இருங்கள். உங்களுக்கு காய்ச்சல், இருமல் மற்றும் சுவாசிப்பதில் சிரமம் இருந்தால், மருத்துவ சிகிச்சை பெற்று முன்கூட்டியே அழைக்கவும். உங்கள் உள்ளூர் சுகாதார அதிகாரத்தின் வழிமுறைகளைப் பின்பற்றவும்.<img src="https://media.istockphoto.com/vectors/stay-at-home-save-the-lives-of-the-people-of-the-coronavirus-covid19-vector-id1215250998?k=6&m=1215250998&s=612x612&w=0&h=nPdVaju8CwfdkHFkhKITRfcewu_5AkjBrky7z-4ytJU=" width="70" border="1 px solid #aaa" display="inline"><br><br>
+• சமீபத்திய COVID-19 ஹாட்ஸ்பாட்களில் (COVID-19 பரவலாக பரவி வரும் நகரங்கள் அல்லது உள்ளூர் பகுதிகள்) புதுப்பித்த நிலையில் இருங்கள். முடிந்தால், இடங்களுக்கு பயணிப்பதைத் தவிர்க்கவும்.<img src="https://image.shutterstock.com/image-vector/coronavirus-news-vector-illustration-blog-260nw-1685833876.jpg" width="70" border="1 px solid #aaa" display="inline"> 
+</p> 
+</div>
+</div>
+</div>
+<br>
+<br>
+<section id="about">
+<h2 style="width: 100%; text-align: center;font-family:Candara Light;color: gray;	font-size: 40px;   border-bottom: 1px solid gray;  line-height: 0.1em;   margin: 10px 0 20px; ">
+<span style="background:white;    padding:0 10px;">&nbsp;கொரோனா வைரஸை பற்றி&nbsp;</span></h2><br>
+
+<!--About-->
+<style>
+.rgba-grey-strong,.rgba-grey-strong:after{background-color:rgba(158,158,158,0.7)}.grey.darken-1{background-color:#757575 !important}.grey.darken-2{background-color:#616161 !important}.grey.darken-3{background-color:#424242 !important}.grey.darken-4{background-color:#212121 !important}.black{background-color:#000 !important}.black-text{color:#000 !important}.rgba-black-slight,.rgba-black-slight:after{background-color:rgba(0,0,0,0.1)}.rgba-black-light,.rgba-black-light:after{background-color:rgba(0,0,0,0.3)}.rgba-black-strong,.rgba-black-strong:after{background-color:rgba(0,0,0,0.7)}.white{background-color:#fff !important}.white-text{color:#fff !important}.rgba-white-slight,.rgba-white-slight:after{background-color:rgba(255,255,255,0.1)}.rgba-white-light,.rgba-white-light:after{background-color:rgba(255,255,255,0.3)}.rgba-white-strong,.rgba-white-strong:after{background-color:rgba(255,255,255,0.7)}.rgba-stylish-slight{background-color:rgba(62,69,81,0.1)}.rgba-stylish-light{background-color:rgba(62,69,81,0.3)}.rgba-stylish-strong{background-color:rgba(62,69,81,0.7)}.success-color{background-color:#00c851 !important}.success-color-dark{background-color:#007e33 !important}.warning-color{background-color:#fb3 !important}.warning-color-dark{background-color:#f80 !important}.danger-color,ul.stepper li.warning a .circle{background-color:#ff3547 !important}.danger-color-dark{background-color:#c00 !important}.elegant-color{background-color:#2e2e2e !important}.elegant-color-dark{background-color:#212121 !important}.stylish-color{background-color:#4b515d !important}.stylish-color-dark{background-color:#3e4551 !important}.unique-color{background-color:#3f729b !important}.unique-color-dark{background-color:#1c2331 !important}.special-color{background-color:#37474f !important}.special-color-dark{background-color:#263238 !important}.purple-gradient{background:linear-gradient(40deg, #ff6ec4, #7873f5) !important}.peach-gradient{background:linear-gradient(40deg, #ffd86f, #fc6262) !important}.aqua-gradient{background:linear-gradient(40deg, #2096ff, #05ffa3) !important}.blue-gradient{background:linear-gradient(40deg, #45cafc, #303f9f) !important}.purple-gradient-rgba{background:linear-gradient(40deg, rgba(255,110,196,0.9), rgba(120,115,245,0.9)) !important}.peach-gradient-rgba{background:linear-gradient(40deg, rgba(255,216,111,0.9), rgba(252,98,98,0.9)) !important}.aqua-gradient-rgba{background:linear-gradient(40deg, rgba(32,150,255,0.9), rgba(5,255,163,0.9)) !important}.blue-gradient-rgba{background:linear-gradient(40deg, rgba(69,202,252,0.9), rgba(48,63,159,0.9)) !important}.dark-grey-text{color:#4f4f4f !important}.dark-grey-text:hover,.dark-grey-text:focus{color:#4f4f4f !important}.hoverable{-webkit-box-shadow:none;box-shadow:none;-webkit-transition:all 0.55s ease-in-out;transition:all 0.55s ease-in-out}.hoverable:hover{-webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);-webkit-transition:all 0.55s ease-in-out;transition:all 0.55s ease-in-out}.z-depth-0{-webkit-box-shadow:none !important;box-shadow:none !important}.z-depth-1{-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important}.z-depth-1-half{-webkit-box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important;box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important}.z-depth-2{-webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}.z-depth-3{-webkit-box-shadow:0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;box-shadow:0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important}.z-depth-4{-webkit-box-shadow:0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) !important;box-shadow:0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) !important}.z-depth-5{-webkit-box-shadow:0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22) !important;box-shadow:0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22) !important}.disabled,:disabled{pointer-events:none !important}a{color:#007bff;text-decoration:none;cursor:pointer;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out}a:hover{color:#0056b3;text-decoration:none;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out}a.disabled:hover,a:disabled:hover{color:#007bff}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}.divider-new{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:2.8rem;margin-bottom:2.8rem}.divider-new>.5rem}.img-fluid,.modal-dialog.cascading-modal.modal-avatar .modal-header,.video-fluid{max-width:100%;height:auto}.flex-center{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%}.flex-center p{margin:0}.flex-center ul{text-align:center}.flex-center ul li{margin-bottom:1rem}.flex-center ul li:last-of-type{margin-bottom:0}.hr-light{border-top:1px solid #fff}.hr-dark{border-top:1px solid #666}.w-responsive{width:75%}@media (max-width: 740px){.w-responsive{width:100%}}.w-header{width:3.2rem}.collapsible-body{display:none}.jumbotron{background-color:#fff;border-radius:.125rem;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}.bg-primary{background-color:#4285f4 !important}a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus{background-color:#1266f1 !important}.border-primary{border-color:#4285f4 !important}.bg-danger{background-color:#ff3547 !important}a.bg-danger:hover,a.bg-danger:focus,button.bg-danger:hover,button.bg-danger:focus{background-color:#ff0219 !important}.border-danger{border-color:#ff3547 !important}.bg-warning{background-color:#fb3 !important}a.bg-warning:hover,a.bg-warning:focus,button.bg-warning:hover,button.bg-warning:focus{background-color:#fa0 !important}.border-warning{border-color:#fb3 !important}.bg-success{background-color:#00c851 !important}a.bg-success:hover,a.bg-success:focus,button.bg-success:hover,button.bg-success:focus{background-color:#00953c !important}.border-success{border-color:#00c851 !important}.bg-info{background-color:#33b5e5 !important}a.bg-info:hover,a.bg-info:focus,button.bg-info:hover,button.bg-info:focus{background-color:#1a9bcb !important}.border-info{border-color:#33b5e5 !important}.bg-default{background-color:#2bbbad !important}a.bg-default:hover,a.bg-default:focus,button.bg-default:hover,button.bg-default:focus{background-color:#219287 !important}.border-default{border-color:#2bbbad !important}.bg-secondary{background-color:#a6c !important}a.bg-secondary:hover,a.bg-secondary:focus,button.bg-secondary:hover,button.bg-secondary:focus{background-color:#9540bf !important}.border-secondary{border-color:#a6c !important}.bg-dark{background-color:#212121 !important}a.bg-dark:hover,a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus{background-color:#080808 !important}.border-dark{border-color:#212121 !important}.bg-light{background-color:#e0e0e0 !important}a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus{background-color:#c7c7c7 !important}.border-light{border-color:#e0e0e0 !important}.card-img-100{width:100px;height:100px}.card-img-64{width:64px;height:64px}.mml-1{margin-left:-0.25rem !important}.flex-1{-webkit-box-flex:1;-ms-flex:1;flex:1}body{font-family:"Roboto",sans-serif;font-weight:300}h1,h2,h3,h4,h5,h6{font-weight:300}.blockquote{padding:.5rem 1rem;border-left:.25rem solid #eceeef}.blockquote.text-right{border-right:.25rem solid ss#eceeef;border-left:none}.blockquote .bq-title{margin-bottom:0;font-size:1.5rem;font-weight:400}.blockquote p{padding:1rem 0;font-size:1.1rem}.bq-primary{border-left:3px solid #4285f4 !important}.bq-primary .bq-title{color:#4285f4 !important}.bq-danger{border-left:3px solid #ff3547 !important}.bq-danger .bq-title{color:#ff3547 !important}.bq-warning{border-left:3px solid #fb3 !important}.bq-warning .bq-title{color:#fb3 !important}.bq-success{border-left:3px solid #00c851 !important}.bq-success .bq-title{color:#00c851 !important}.bq-info{border-left:3px solid #33b5e5 !important}.bq-info .bq-title{color:#33b5e5 !important}.h1-responsive{font-size:150%}.h2-responsive{font-size:145%}.h3-responsive{font-size:135%}.h4-responsive{font-size:135%}.h5-responsive{font-size:135%}@media (min-width: 576px){.h1-responsive{font-size:170%}.h2-responsive{font-size:140%}.h3-responsive{font-size:125%}.h4-responsive{font-size:125%}.h5-responsive{font-size:125%}}@media (min-width: 768px){.h1-responsive{font-size:200%}.h2-responsive{font-size:170%}.h3-responsive{font-size:140%}.h4-responsive{font-size:125%}.h5-responsive{font-size:125%}}@media (min-width: 992px){.h1-responsive{font-size:200%}.h2-responsive{font-size:170%}.h3-responsive{font-size:140%}.h4-responsive{font-size:125%}.h5-responsive{font-size:125%}}@media (min-width: 1200px){.h1-responsive{font-size:250%}.h2-responsive{font-size:200%}.h3-responsive{font-size:170%}.h4-responsive{font-size:140%}.h5-responsive{font-size:125%}}.text-primary{color:#4285f4 !important}a.text-primary:hover,a.text-primary:focus{color:#1266f1 !important}.text-danger{color:#ff3547 !important}a.text-danger:hover,a.text-danger:focus{color:#ff0219 !important}.text-warning{color:#fb3 !important}a.text-warning:hover,a.text-warning:focus{color:#fa0 !important}.text-success{color:#00c851 !important}a.text-success:hover,a.text-success:focus{color:#00953c !important}.text-info{color:#33b5e5 !important}a.text-info:hover,a.text-info:focus{color:#1a9bcb !important}.text-default{color:#2bbbad !important}a.text-default:hover,a.text-default:focus{color:#219287 !important}.text-secondary{color:#a6c !important}a.text-secondary:hover,a.text-secondary:focus{color:#9540bf !important}.text-dark{color:#212121 !important}a.text-dark:hover,a.text-dark:focus{color:#080808 !important}.text-light{color:#e0e0e0 !important}a.text-light:hover,a.text-light:focus{color:#c7c7c7 !important}.font-small{font-size:.9rem}strong{font-weight:500}.view{position:relative;overflow:hidden;cursor:default}.view .mask{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:hidden;background-attachment:fixed}.view img,.view video{position:relative;display:block}.view video.video-intro{top:50%;left:50%;z-index:-100;width:auto;min-width:100%;height:auto;min-height:100%;-webkit-transition:1s opacity;transition:1s opacity;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.overlay .mask{opacity:0;-webkit-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.overlay .mask:hover{opacity:1}.zoom img,.zoom video{-webkit-transition:all 0.2s linear;transition:all 0.2s linear}.zoom:hover img,.zoom:hover video{-webkit-transform:scale(1.1);transform:scale(1.1)}.pattern-1{background:url(../img/overlays/01.png);background-attachment:fixed}.pattern-2{background:url(../img/overlays/02.png);background-attachment:fixed}.pattern-3{background:url(../img/overlays/03.png);background-attachment:fixed}.pattern-4{background:url(../img/overlays/04.png);background-attachment:fixed}.pattern-5{background:url(../img/overlays/05.png);background-attachment:fixed}.pattern-6{background:url(../img/overlays/06.png);background-attachment:fixed}.pattern-7{background:url(../img/overlays/07.png);background-attachment:fixed}.pattern-8{background:url(../img/overlays/08.png);background-attachment:fixed}.pattern-9{background:url(../img/overlays/09.png);background-attachment:fixed}/*!
+ </style>
+<!--Zoom effect-->
+<div class="view overlay">
+    <img src="https://www.xmple.com/wallpaper/grey-white-gradient-linear-1920x1080-c2-808080-ffe4e1-a-150-f-14.svg" class="img-fluid " style="height:200px;width:100%;">
+    <div class="mask flex-center rgba-grey-strong">
+       <a href="https://covid-tracker-coceb.run-ap-south1.goorm.io/tamilabout" class="white-text" style="font-size: 40px; font-family: Candara Light;"> கொரோனா வைரஸ் பற்றி அனைத்தையும் அறிக</a>
+ 	</div>
+</div>
+</section>
+<br>
+<!--Ayurvedic Consults-->
+<div id="ayurvedicconsults">
+<h2 style="width: 100%; text-align: center;font-family:Candara Light;color: gray;	font-size: 40px;   border-bottom: 1px solid gray;  line-height: 0.1em;   margin: 10px 0 20px; ">
+<span style="background:white;    padding:0 10px;">&nbsp;ஆயுர்வேத ஆலோசனைகள்&nbsp;</span></h2><br>
+
+<div class="immunity" style="background-image: url(https://www.mariyurveda.com/wp-content/uploads/ayurveda_herbs_background.jpg);background-repeat:no-repeat;margin: 0px; padding: 0px; overflow-x: hidden;overflow-y: hidden;width:100%; height:100%;">
+<div class="ayurvedic-text" style="width:80%;height:100%;padding:30px;">
+<h2 style="font-family:Agency FB;font-size:50px;color:yellow;text-align:center;">ஆயுர்வேதத்தின் நோய்த்தடுப்பு ஊக்க நடவடிக்கைகள்<br><br></h2>
+<p style="font-family:Agency FB;font-size:25px;color:white;text-align:left;font-weight:lighter;">சியவன்பிரஷ் 10 கிராம் (1 தேக்கரண்டி) காலையில் எடுத்துக் கொள்ளுங்கள்.
+<br><br>கபாசுரா குடினீர் சூரணம் குறைந்தது 3 நாட்களுக்கு குடிக்கவும்.
+<p style="font-family:Agency FB;font-size:25px;color:white;text-align:left;font-weight:lighter;">துளசி, இலவங்கப்பட்டை, மிளகு, இஞ்சி மற்றும் திராட்சை ஆகியவற்றிலிருந்து தயாரிக்கப்படும் மூலிகை தேநீர் / காபி தண்ணீர் குடிக்கவும்&#8209;.<br>
+<br>யோகாசனம், பிராணயாமா மற்றும் தியானத்தின் தினசரி பயிற்சி குறைந்தது 30 நிமிடங்கள்.</p>
+</div>
+</div>
+</div>
+<br><br>
+<div id="footer" style = "position: absolute; width :100%; height:0px;text-align: center;">
+<h2 style="width: 100%; text-align: center;font-family:Candara Light;color: gray;	font-size: 40px;   border-bottom: 1px solid gray;  line-height: 0.1em;   margin: 10px 0 20px; "><br><br>
+<span style="background:white;    padding:0 10px;">&nbsp;அரசாங்க உதவி இணைப்புகள் &nbsp;</span></h2><br>
+<div class = "jumbotron" style="background:#1a1b1c;color:white;font-family:Agency FB; font-size:20px; ">
+<h2 style =" text-align: center; font-size: 50px; color:white;">முக்கிய இணைப்புகள்</h2>
+<a href="http://14.139.183.34/covid19/volunteers.php?district=24"><button style="font-size: 30px;"type="button" class="btn btn-link" >
+COVID-19 தன்னார்வ பதிவு போர்ட்டலுக்கு</button></a><br>
+<a href="https://tnepass.tnega.org/"><button style="font-size: 30px;"type="button" class="btn btn-link">COVID-19 மின்-பாஸ் பதிவு</button></a><br>
+<a href="https://cdn.s3waas.gov.in/s3f5f8590cd58a54e94377e6ae2eded4d9/uploads/2020/03/2020032877.pdf"><button style="font-size: 30px;" type="button" class="btn btn-link">சந்தைகளின் இருப்பிடத்தில் மாற்றம் குறித்து</button></a>
+<div id ="blah" style = "font-size:15px; color:yellow;">@content owned by District Administration,Madurai.</div>
+</div>
+</div>
+</p>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--home page code ends here-->

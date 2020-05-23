@@ -1,0 +1,92 @@
+var express = require("express");
+var app = express();
+var bodyparser = require ("body-parser");
+var mongoose = require("mongoose");
+var mongodb = "mongodb://localhost:27017/covid_tracker";
+
+
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+
+mongoose.connect(mongodb,{ useUnifiedTopology: true });
+app.use(bodyparser.urlencoded({extended : false}));
+app.set("view engine", "ejs");
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+//SCHEMA SETUP
+var covidSchema = new mongoose.Schema({
+	name : String,
+	Email : String
+});
+
+var personal_Details = mongoose.model("personal_Details",covidSchema);
+
+
+app.get("/",function(req,res){
+	res.render("home");
+});
+
+app.get("/taketest",function(req,res){
+	res.render("checkup");
+})
+
+app.get("/tamil",function(req,res){
+	res.render("tamilhome");
+});
+app.get("/checkuptamil",function(req,res){
+	res.render("tamilcheckup");
+});
+app.get("/tamilabout",function(req,res){
+	res.render("tamilabout");
+});
+app.get("/about",function(req,res){
+	res.render("about");
+});
+app.get("/completeform",function(req,res){
+	res.render("formcompleted");
+});
+app.get("/tamilcompform",function(req,res){
+	res.render("tamilformcompleted");
+})
+
+app.post("/taketest",function(req,res){
+	var name = req.body.firstname;
+	console.log(name);
+	var email = req.body.email;
+	console.log(email);
+	var newEntry = {name:name,Email:email};
+		personal_Details.createCollection(newEntry,function(err,res){
+			if(!err){
+				res.render("formcompleted");
+		}
+			else{
+			console.log(err);
+		}
+	});
+
+});
+app.post("/checkuptamil",function(req,res){
+	var name = req.body.firstname;
+	console.log(name);
+	var email = req.body.email;
+	console.log(email);
+	var newEntry = {name:name,Email:email};
+		personal_Details.createCollection(newEntry,function(err,res){
+			if(!err){
+				res.render("tamilformcompleted");
+		}
+			else{
+			console.log(err);
+		}
+	});
+	
+})
+
+
+
+app.listen(3000, function() { 
+  console.log('Server listening on port 3000'); 
+});

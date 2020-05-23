@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+    
+h1{
+  color: white;
+  background: #5B5B5B;
+  font-family: raleway;
+  text-align: center;
+}
+input[type=text], select {
+                width: 100%;
+              padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+}
+.containers {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.containers:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.containers input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containers .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+div{
+  border-radius: 5px;
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+ }
+ label{
+  font-size: 20px;
+ }
+ .container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+.container1 input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input:checked ~ .checkmark1:after 
+  display: block;
+}
+
+.container1 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+    
+</style>
+<meta charset="UTF-8">
+	<title>விரைவான சோதனை</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<h1>விரைவான சோதனை</h1>
+<div class=container>
+  <form>
+    <label for="name">உங்கள் பெயர்</label>
+    <input type="text" id="fname" name="firstname" placeholder="உங்கள் பெயர்.." required>
+
+    <label for="email">உங்கள் மின்னஞ்சல் முகவரி</label>
+    <input type="text" id="mail" name="email" placeholder="உங்கள் மின்னஞ்சல் முகவரி.." required>
+    <label>உங்கள் பாலினம்</label><br><br>
+    <label class="containers">ஆண்
+    <input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">பெண்
+  	<input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">மூன்றாம் பாலினம்
+  	<input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+
+    <label for="Profession">தொழில்</label>
+    <select id="Profession" name="Profession">
+     	<option value="Admissions">மருத்துவர் / செவிலியர் / துணை மருத்துவ பணியாளர் </option>
+    						<option value="Police">காவல்துறை அதிகாரிகள் / சட்ட அமலாக்கம்</option>
+    						<option value="Delivery">அத்தியாவசிய பொருட்கள் விநியோகம் </option>
+    						<option value="Chemist">வேதியியலாளர் / மருந்தக பணியாளர் </option>
+    						<option value="Groceries">மொத்த விற்பனையாளர் / மளிகை பொருட்கள் விற்பனையாளர்</option>
+    						<option value="Industry">தொழில் துறை / உற்பத்தியாளர்</option>
+    						<option value="Retailer">சில்லறை விற்பனையாளர்</option>
+    						<option value="None">மேற்கூறிய எதுவும் இல்லை</option>
+    </select>
+    <label>சமீபத்தில் வெளிநாட்டில் பயணம் செய்தீர்களா?</label><br><br>
+    <label class="containers">ஆம்
+    <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">இல்லை
+  	<input type="radio" name="radio1">
+  <span class="checkmark"></span>
+	</label>
+	<label>இருமல், காய்ச்சல், சுவாச சிரமம் போன்ற அறிகுறிகள் உங்களுக்கு உள்ளதா ?</label><br><br>
+    <label class="containers">ஆம்
+    <input type="radio"  name="radio2">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">இல்லை
+  	<input type="radio" name="radio2">
+  <span class="checkmark"></span>
+	</label>
+	<label>பின்வருவனவற்றில் ஏதேனு
+    ம் உங்களுக்கு உண்டா?<br></label><br>
+    <label class="container1">நீரிழிவு நோய்
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">உயர் இரத்த அழுத்தம்
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">நுரையீரல் நோய்
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">இருதய நோய்
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">மேற்கூறிய எதுவும் இல்லை
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label>கொரோனா வைரஸ் உறுதிப்படுத்தப்பட்ட ஒருவருடன் நீங்கள் சமீபத்தில் தொடர்பு கொண்டீர்களா அல்லது வாழ்ந்திருக்கிறீர்களா?</label><br><br>
+    <label class="containers">ஆம்
+    <input type="radio"  name="radio3">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">இல்லை
+  	<input type="radio" name="radio3">
+  <span class="checkmark"></span>
+	</label>
+	<label>நீங்கள் ஒரு சுகாதாரப் பணியாளரா மற்றும் பாதுகாப்பு கியர் இல்லாமல் ஒரு கொரோனா உறுதிப்படுத்தப்பட்ட நபரை ஆய்வு செய்தீர்களா?</label><br><br>
+    <label class="containers">ஆம்
+    <input type="radio"  name="radio4">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">இல்லை
+  	<input type="radio" name="radio4">
+  <span class="checkmark"></span>
+	</label>
+     <a href ="https://covid-tracker-coceb.run-ap-south1.goorm.io/tamilcompform">
+      <button type="button" class="btn btn-success">சமர்ப்பிக்கவும்</button></a>
+  </form>
+</div>
+	</body>
+</html>

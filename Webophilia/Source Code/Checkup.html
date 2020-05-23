@@ -1,0 +1,258 @@
+<!DOCTYPE> 
+<html>
+<head>
+<title>Quick Check up</title>
+<style>
+		
+h1{
+	color: white;
+	background: #5B5B5B;
+	font-family: raleway;
+  text-align: center;
+}
+input[type=text], select {
+  							width: 100%;
+ 							padding: 12px 20px;
+  							margin: 8px 0;
+  							display:   inline-block;
+  							border: 1px solid #ccc;
+  							border-radius: 4px;
+  							box-sizing: border-box;
+}
+.containers {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.containers:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.containers input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containers .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+div{
+	border-radius: 5px;
+  	background-color: #d3d3d3;
+  	padding: 20px;
+}
+input[type=submit] {
+  					width: 100%;
+  					background-color: #4CAF50;
+  					color: white;
+  					padding: 14px 20px;
+  					margin: 8px 0;
+  					border: none;
+  					border-radius: 4px;
+  					cursor: pointer;
+ }
+ label{
+ 	font-size: 20px;
+ }
+ .container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+.container1 input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input:checked ~ .checkmark1:after 
+  display: block;
+}
+
+.container1 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+		
+</style>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Quick Checkup</h1>
+<div class=container>
+  <form method="POST" method="/taketest" >
+    <label for="name">Your Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="email">Your e-mail</label>
+    <input type="text" id="mail" name="email" placeholder="Your e-mail.." required>
+    <label>Your Gender</label><br><br>
+    <label class="containers">Male
+    <input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">Female
+  	<input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">Others
+  	<input type="radio" name="radio">
+  <span class="checkmark"></span>
+	</label>
+
+    <label for="Profession">Profession</label>
+    <select id="Profession" name="Profession">
+     	<option value="Admissions">Doctor/Nurse/Paramedic</option>
+    						<option value="Police">Police/Officers/Law Enforcement</option>
+    						<option value="Delivery">Delivery</option>
+    						<option value="Chemist">Chemist/Pharmacy</option>
+    						<option value="Groceries">Wholesaler/Groceries</option>
+    						<option value="Industry">Industry/Manufacturer</option>
+    						<option value="Retailer">Retailer</option>
+    						<option value="None">None of the above</option>
+    </select>
+    <label>Travelled ABROAD Recently?</label><br><br>
+    <label class="containers">Yes
+    <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">No
+  	<input type="radio" name="radio1">
+  <span class="checkmark"></span>
+	</label>
+	<label>Are you experiencing any of the symptoms like COUGH, FEVER OR DIFFICULTY IN BREATHING?</label><br><br>
+    <label class="containers">Yes
+    <input type="radio"  name="radio2">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">No
+  	<input type="radio" name="radio2">
+  <span class="checkmark"></span>
+	</label>
+	<label>Have you ever had any of the following?<br></label><br>
+    <label class="container1">Diabetes
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Hypertension
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Lung Disease
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Heart Disease
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">None Of The Above
+  <input type="checkbox">
+  <span class="checkmark1"></span>
+</label>
+<label>Have you recently interacted or lived with someone who has tested POSITIVE for COVID-19?</label><br><br>
+    <label class="containers">Yes
+    <input type="radio"  name="radio3">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">No
+  	<input type="radio" name="radio3">
+  <span class="checkmark"></span>
+	</label>
+	<label>Are you a healthcare worker and examined a COVID-19 confirmed case without protective gear?</label><br><br>
+    <label class="containers">Yes
+    <input type="radio"  name="radio4">
+  <span class="checkmark"></span>
+	</label>
+	<label class="containers">No
+  	<input type="radio" name="radio4">
+  <span class="checkmark"></span>
+	</label>
+   
+	 <a href ="https://covid-tracker-coceb.run-ap-south1.goorm.io/completeform" >
+		  <button type="button" class="btn btn-success">Submit</button></a>
+  </form>
+</div>
+</body>
+</html>
